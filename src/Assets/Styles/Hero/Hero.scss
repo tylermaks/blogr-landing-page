@@ -1,0 +1,66 @@
+$gradientLtRed: hsl(13, 100%, 72%);
+$gradientRed: hsl(353, 100%, 62%);
+
+$mdRed: hsl(356, 100%, 66%); //CTA Text
+
+//NAV
+#main-nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top:0;
+    left: 0;
+
+    padding:2rem 1rem;
+    width: 100%;
+}
+
+.logo{
+    height: 25px;
+}
+
+.menu{
+    height: 15px;
+    cursor: pointer;
+}
+
+//HERO
+#hero{
+    background-image:url("../../images/bg-pattern-intro-mobile.svg"), linear-gradient(to bottom right, $gradientLtRed, 50%, $gradientRed);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 35% 35%, center;
+    background-size: 300%, 100%;
+
+    border-bottom-left-radius: 75px;
+    padding: 9rem 4.5rem 5rem 4.5rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    *{
+        margin-bottom: 1rem;
+    }
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+    margin-inline: auto;
+    max-width:250px;
+    width: 100%;
+}
+
+.main-btn{
+    background-color: #fff;
+    color: $mdRed;
+}
+
+.alt-btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}

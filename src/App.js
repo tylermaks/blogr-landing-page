@@ -1,9 +1,10 @@
-import './App.css';
+import "./Assets/Styles/AppStyles/App.css"
+import Hero from "./Layouts/Hero";
 
 function App() {
   return (
     <main className="App">
-      hello world
+      <Hero />
     </main>
   );
 }

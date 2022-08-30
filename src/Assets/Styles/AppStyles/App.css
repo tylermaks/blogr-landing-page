@@ -8,4 +8,27 @@ body, html, .App {
   height: 100%;
   width: 100%;
 }
+
+h1, p, button {
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
 /*# sourceMappingURL=App.css.map */
