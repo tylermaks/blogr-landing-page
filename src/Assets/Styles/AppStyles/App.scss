@@ -1,0 +1,23 @@
+//VARIABLES
+$mdRed: hsl(356, 100%, 66%); //CTA Text
+$ltRed: hsl(355, 100%, 74%); //CTA Hover
+$dkBlue:hsl(208, 49%, 24%); //Headings
+$grayBlue: hsl(240, 2%, 79%); //Footer text
+$dkGray: hsl(207, 13%, 34%); //Body text
+$blackBlue: hsl(240, 10%, 16%); //Footer bg
+$gradientLtRed: hsl(13, 100%, 72%); //Nav
+$gradientRed: hsl(353, 100%, 62%); //Nav
+$gradientDkBlue: hsl(237, 17%, 21%); //Body
+$gradientBlue:hsl(237, 23%, 32%); //Body
+
+//SETUP
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin:0;
+}
+
+body, html, .App{
+  height: 100%;
+  width:100%;
+}
+
