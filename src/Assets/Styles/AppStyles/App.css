@@ -9,7 +9,7 @@ body, html, .App {
   width: 100%;
 }
 
-h1, p, button {
+h1, p, button, span {
   color: #fff;
   font-family: "Overpass", sans-serif;
 }
@@ -30,5 +30,16 @@ button {
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-weight: 600;
+}
+
+.main-btn {
+  background-color: #fff;
+  color: #ff525d;
+}
+
+.alt-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 /*# sourceMappingURL=App.css.map */

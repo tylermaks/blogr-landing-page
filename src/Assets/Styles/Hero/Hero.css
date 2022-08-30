@@ -1,43 +1,32 @@
-#main-nav {
+#hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2rem 1rem;
-  width: 100%;
-}
-
-.logo {
-  height: 25px;
-}
-
-.menu {
-  height: 15px;
-  cursor: pointer;
-}
-
-#hero {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../../images/bg-pattern-intro-mobile.svg"), -webkit-gradient(linear, left top, right bottom, from(#ff8f70), color-stop(50%), to(#ff3d54));
   background-image: url("../../images/bg-pattern-intro-mobile.svg"), linear-gradient(to bottom right, #ff8f70, 50%, #ff3d54);
   background-repeat: no-repeat, no-repeat;
   background-position: 35% 35%, center;
   background-size: 300%, 100%;
   border-bottom-left-radius: 75px;
-  padding: 9rem 4.5rem 5rem 4.5rem;
+  padding: 0 4rem;
   position: relative;
   text-align: center;
+  height: 400px;
   width: 100%;
 }
 
-#hero * {
+#hero h1 {
+  font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
@@ -54,14 +43,19 @@
   width: 100%;
 }
 
-.main-btn {
-  background-color: #fff;
-  color: #ff525d;
-}
-
-.alt-btn {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+@media screen and (min-width: 768px) {
+  #hero {
+    background-image: url("../../images/bg-pattern-intro-desktop.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), color-stop(30%), to(#ff3d54));
+    background-image: url("../../images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, #ff8f70, 30%, #ff3d54);
+    background-position: 25% 55%, center;
+    background-size: 175%, 100%;
+    height: 550px;
+  }
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero p {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=Hero.css.map */

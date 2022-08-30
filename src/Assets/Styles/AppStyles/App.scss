@@ -20,7 +20,8 @@ body, html, .App{
   width:100%;
 }
 
-h1, p, button{
+//TEXT STYLES
+h1, p, button, span{
   color: #fff;
   font-family: "Overpass", sans-serif;
 }
@@ -35,10 +36,22 @@ p{
   font-weight: 300;
 }
 
+//BUTTON STYLES
 button{ 
   border:none;
   border-radius: 25px;
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-weight: 600;
+}
+
+.main-btn{
+  background-color: #fff;
+  color: $mdRed;
+}
+
+.alt-btn{
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
