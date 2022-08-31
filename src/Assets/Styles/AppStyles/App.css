@@ -9,14 +9,19 @@ body, html, .App {
   width: 100%;
 }
 
-h1, p, button, span {
-  color: #fff;
+h1, h2, p, button, span {
   font-family: "Overpass", sans-serif;
 }
 
 h1 {
+  color: #fff;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+h2 {
+  color: #1f3f5b;
+  font-size: 1.6rem;
 }
 
 p {

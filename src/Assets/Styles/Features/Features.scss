@@ -1,0 +1,69 @@
+$dkGray: hsl(207, 13%, 34%); //Body text
+
+.features{
+    margin: 5rem auto;
+    max-width: 600px;
+    padding: 1rem 2.5rem;
+    text-align: center;
+    width: 100%;
+
+    h2{
+        margin-bottom: 3rem;
+    }
+
+    p{
+        color: $dkGray;
+        line-height: 2;
+        margin: 1rem 0 3rem 0;
+    }
+}
+
+.mobile-img{
+    margin: 2rem 0;
+    width:100%;
+}
+
+.desktop-img{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .features{
+        max-width: none;
+    }
+
+    .features-inner{
+        display: flex;
+        align-items: center;
+    
+        position: relative;
+
+        article, div{
+            width: 50%;
+        }
+
+        &--right{
+            flex-direction: row-reverse;
+        }
+
+        &--left{
+            flex-direction: row;
+        }
+    }
+    
+    .mobile-img{
+        display: none
+    }
+
+    .desktop-img{
+        display: block;
+        position: absolute;
+        width: 75%;
+
+        &--right{
+            top:-15%;
+            right: -30%;
+        }
+    }
+
+}
