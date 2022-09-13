@@ -19,7 +19,7 @@ const featureData = [
         title:"",
         desktopImg:desktopImgTwo,
         mobileImg:mobileImgTwo,
-        subHeadingOne:"Free, open, simple", 
+        subheadingOne:"Free, open, simple", 
         paragraphOne:"Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.", 
         subheadingTwo:"Powerful tooling",
         paragraphTwo:"  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, butcapable of producing even the most complicated sites."

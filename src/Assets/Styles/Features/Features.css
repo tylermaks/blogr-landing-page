@@ -1,19 +1,26 @@
 .features {
   margin: 5rem auto;
   max-width: 600px;
-  padding: 1rem 2.5rem;
   text-align: center;
   width: 100%;
 }
 
+.features h1 {
+  color: #1f3f5b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 .features h2 {
-  margin-bottom: 3rem;
+  margin-top: 1em;
 }
 
 .features p {
   color: #4b5862;
   line-height: 2;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 5rem 0;
 }
 
 .mobile-img {
@@ -28,15 +35,24 @@
 @media screen and (min-width: 768px) {
   .features {
     max-width: none;
+    text-align: left;
+    overflow: hidden;
+  }
+  .features-title {
+    font-size: 2.5rem;
+    text-align: center;
   }
   .features-inner {
+    height: 750px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
     position: relative;
+    width: 85%;
   }
   .features-inner article, .features-inner div {
     width: 50%;
@@ -56,14 +72,18 @@
   .mobile-img {
     display: none;
   }
+  .img-container {
+    height: 100%;
+  }
   .desktop-img {
     display: block;
-    position: absolute;
-    width: 75%;
+    height: 100%;
   }
   .desktop-img--right {
-    top: -15%;
-    right: -30%;
+    margin-left: 25%;
+  }
+  .desktop-img--left {
+    margin-right: 15%;
   }
 }
 /*# sourceMappingURL=Features.css.map */

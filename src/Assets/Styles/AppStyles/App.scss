@@ -60,3 +60,9 @@ button{
   border: 1px solid #fff;
   color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+  .section-container{
+    width: 85%;
+  }
+}

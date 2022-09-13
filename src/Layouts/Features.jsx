@@ -14,9 +14,9 @@ function Features({instance}){
 
                     return(
                         <section className="features">
-                            <h2>{item.title}</h2>
+                            <h1 className="features-title">{item.title}</h1>
                             <div className={"features-inner features-inner--" + rowDirection}>
-                                <div>
+                                <div className="img-container">
                                     <img className="mobile-img" src={item.mobileImg} alt="Editor" />
                                     <img className={"desktop-img desktop-img--" + rowDirection} src={item.desktopImg} alt="Editor" />
                                 </div>
