@@ -1,8 +1,8 @@
 .features {
-  margin: 5rem auto;
+  margin: 10rem auto;
   max-width: 600px;
   text-align: center;
-  width: 100%;
+  width: 85%;
 }
 
 .features h1 {
@@ -14,7 +14,7 @@
 }
 
 .features h2 {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 .features p {
@@ -35,8 +35,9 @@
 @media screen and (min-width: 768px) {
   .features {
     max-width: none;
-    text-align: left;
     overflow: hidden;
+    text-align: left;
+    width: 100%;
   }
   .features-title {
     font-size: 2.5rem;
@@ -74,6 +75,14 @@
   }
   .img-container {
     height: 100%;
+  }
+  .img-container--left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .desktop-img {
     display: block;

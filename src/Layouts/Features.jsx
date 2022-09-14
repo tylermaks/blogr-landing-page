@@ -16,7 +16,7 @@ function Features({instance}){
                         <section className="features">
                             <h1 className="features-title">{item.title}</h1>
                             <div className={"features-inner features-inner--" + rowDirection}>
-                                <div className="img-container">
+                                <div className={"img-container img-container--" + rowDirection}>
                                     <img className="mobile-img" src={item.mobileImg} alt="Editor" />
                                     <img className={"desktop-img desktop-img--" + rowDirection} src={item.desktopImg} alt="Editor" />
                                 </div>

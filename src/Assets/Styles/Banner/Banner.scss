@@ -1,0 +1,76 @@
+$gradientDkBlue: hsl(237, 17%, 21%); //Body
+$gradientBlue:hsl(237, 23%, 32%); //Body
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../../images/bg-pattern-circles.svg"), linear-gradient(to right, $gradientDkBlue, 50%, $gradientBlue);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center -350px, center;
+    background-size: cover, 100%;
+
+    border-bottom-left-radius: 75px;
+    border-top-right-radius: 75px;
+    margin-top: 15rem;
+    padding: 15rem 2rem 10rem 2rem;
+    position: relative;
+
+    article, div{
+        width: 100%;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    p{
+        color: white;
+        line-height: 2;
+        margin-top: 1rem;
+    }
+}
+
+.phones-img{
+    position: absolute;
+    top: -25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: 350px;
+}
+
+
+@media screen and (min-width: 768px){
+    #banner{
+        background-position: -20% 75%, center;
+        background-size: 60%, 100%;
+
+        flex-direction: row;
+        height: 400px;
+        padding: 5rem 0;
+
+
+        article, div{
+            width: 50%;
+        }
+
+        article{
+            padding-right: 15%;
+            text-align: left;
+        }
+
+   
+    
+    }
+
+    .phones-img{
+        position: static;
+        width: 90%;
+    }
+}

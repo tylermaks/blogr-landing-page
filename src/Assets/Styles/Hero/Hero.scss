@@ -16,14 +16,15 @@ $mdRed: hsl(356, 100%, 66%); //CTA Text
     background-size: 300%, 100%;
 
     border-bottom-left-radius: 75px;
+    color: white;
     position: relative;
     text-align: center;
 
-    height: 400px;
+    padding: 10rem 0;
     width: 100%;
 
     h1{
-        font-size: 1.75rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
     }
 }
@@ -38,6 +39,10 @@ $mdRed: hsl(356, 100%, 66%); //CTA Text
     width: 100%;
 }
 
+.section-container{
+    width: 85%;
+  }
+
 
 //DESKTOP VIEWS
 @media screen and (min-width:768px) {
@@ -51,9 +56,7 @@ $mdRed: hsl(356, 100%, 66%); //CTA Text
         h1{
             font-size: 3rem;
         }
-
-        p{
-            font-size: 16px;
-        }
     }
+
+  
 }

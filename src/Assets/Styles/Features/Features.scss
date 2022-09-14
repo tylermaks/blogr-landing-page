@@ -2,10 +2,10 @@ $dkGray: hsl(207, 13%, 34%); //Body text
 $dkBlue:hsl(208, 49%, 24%); //Headings
 
 .features{
-    margin: 5rem auto;
+    margin: 10rem auto;
     max-width: 600px;
     text-align: center;
-    width: 100%;
+    width: 85%;
 
     h1{
         color: $dkBlue;
@@ -14,8 +14,9 @@ $dkBlue:hsl(208, 49%, 24%); //Headings
         right: 0;
         text-align: center;
     }
+
     h2{
-        margin-top: 1em;
+        margin-top: 3em;
     }
 
     p{
@@ -37,9 +38,9 @@ $dkBlue:hsl(208, 49%, 24%); //Headings
 @media screen and (min-width: 768px) {
     .features{
         max-width: none;
-        text-align: left;
-
         overflow: hidden;
+        text-align: left;
+        width: 100%;
     }
 
     .features-title{
@@ -74,7 +75,12 @@ $dkBlue:hsl(208, 49%, 24%); //Headings
     }
 
     .img-container{
-        height: 100%
+        height: 100%;
+
+        &--left{
+            display:flex;
+            justify-content: flex-end;
+        }
     }
 
     .desktop-img{
